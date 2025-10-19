@@ -1,0 +1,9 @@
+name: Hello Actions
+
+on: push  # ← トリガー（pushイベントを検知）
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest  # ← ランナー（GitHubが用意するUbuntu環境）
+    steps:
+      - run: echo "Hello from GitHub Actions!"  # ← ステップ（実行内容）
